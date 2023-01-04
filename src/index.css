@@ -17,6 +17,7 @@ body {
   align-items: center;
   text-align: center;
   display: flex;
+  flex-direction: column;
 }
 
 .dice-container {
@@ -38,4 +39,14 @@ body {
 
 .die-num {
   font-size: 2rem;
+}
+
+button {
+  margin-top: 1rem;
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
 }

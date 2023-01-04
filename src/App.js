@@ -1,5 +1,6 @@
 import React from "react";
 import Die from "./components/Die";
+
 function App() {
   function allNewDice() {
     const newDice = [];
@@ -18,6 +19,7 @@ function App() {
   return (
     <main className="main">
       <div className="dice-container">{diceM}</div>
+      <button onClick={() => setDice(allNewDice())}>Roll</button>
     </main>
   );
 }
