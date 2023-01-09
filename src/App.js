@@ -30,11 +30,18 @@ function App() {
   }
 
   function rollDice() {
-    setDice((oldDice) =>
-      oldDice.map((die) => {
-        return die.isHeld ? die : generateNewDie();
-      })
-    );
+    //initial start
+    if (!tenzies) {
+      setDice((oldDice) =>
+        oldDice.map((die) => {
+          return die.isHeld ? die : generateNewDie();
+        })
+      );
+    } else {
+      // new game
+      setTenzies(false);
+      setDice(allNewDice());
+    }
   }
 
   const diceM = dice.map((item) => {
