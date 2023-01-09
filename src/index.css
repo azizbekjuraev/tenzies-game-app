@@ -50,3 +50,14 @@ button {
   font-size: 1.2rem;
   cursor: pointer;
 }
+
+.title {
+  margin-bottom: 1rem;
+  font-size: 8rem;
+}
+
+.instructions {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  width: 300px;
+}
